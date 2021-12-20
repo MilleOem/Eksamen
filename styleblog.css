@@ -1,0 +1,467 @@
+
+
+#pagewrap {
+    display: grid;
+    grid-gap: 0.5em;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "header"
+        "tekst1"
+        "tekst2"
+        "tekst3"
+        "tekst4"
+        "tekst5"
+        "tekst6"
+        "billedboks5"
+        "tekst7"
+        "billedboks1"
+        "billedboks2"
+        "billedboks3"
+        "billedboks4"        
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
+    background-size: 170%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom;
+}
+
+
+
+img {       
+    position: relative;
+    height: auto;
+}
+
+header {
+    grid-area: header;  
+    text-align: center;
+    margin-top: -0.4em;
+    margin-right: 0.3em;  
+    margin-bottom: -3em;
+    
+}
+
+
+#Illustrationsfigur {
+    grid-area: illustration;
+    margin-top: 4em;
+    margin-bottom: 0.5em;
+    margin-right: 0.3em;
+    width: auto;
+    height: auto;
+    visibility: hidden;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 500;
+    padding-bottom: 13px;
+}
+
+
+
+#tekst1 {
+    grid-area: tekst1;
+    background-color: white;
+    padding: 0.2em;
+    margin-top: 4em;
+    margin-bottom: 0.5em;
+    line-height: 26px;
+    margin-left: auto;    
+}
+
+
+#tekst2 {
+    grid-area: tekst2;
+    background-color: white;
+    padding: 0.2em;
+    margin-bottom: 0.5em;
+    line-height: 26px;
+}
+
+
+#tekst3 {
+    grid-area: tekst3;
+    background-color: white;
+    margin-bottom: 0.5em;
+    padding: 0.2em;
+    line-height: 26px;
+}
+
+
+#tekst4 {
+    grid-area: tekst4;
+    background-color: white;      
+    margin-bottom: 0.5em;
+    padding: 0.2em;
+    line-height: 26px;
+}
+
+#tekst5 {
+    grid-area: tekst5;
+    background-color: white;      
+    margin-bottom: 0.5em;
+    padding: 0.2em;
+    line-height: 26px;
+}
+
+#tekst6 {
+    grid-area: tekst6;
+    background-color: white;      
+    margin-bottom: 0.5em;
+    padding: 0.2em;
+    line-height: 26px;
+}
+
+#tekst7 {
+    grid-area: tekst7;
+    background-color: white;      
+    margin-bottom: 0.5em;
+    padding: 0.2em;
+    line-height: 26px;
+}
+
+
+#billedboks1 {
+    grid-area: billedboks1;
+    background-color: white;      
+    margin-bottom: 0.5em;
+    padding: 0.2em;    
+}
+
+
+#billedboks2 {
+    grid-area: billedboks2;
+    background-color: white;      
+    margin-bottom: 0.5em;
+    padding: 0.2em;    
+}
+
+
+#billedboks3 {
+    grid-area: billedboks3;
+    background-color: white;      
+    margin-bottom: 0.5em;
+    padding: 0.2em;    
+}
+
+
+#billedboks4 {
+    grid-area: billedboks4;
+    background-color: white;      
+    margin-bottom: 0.5em;
+    padding: 0.2em;    
+}
+
+
+#billedboks5 {
+    grid-area: billedboks5;
+    background-color: white;      
+    margin-bottom: 0.5em;
+    padding: 0.2em;    
+}
+
+#footer {
+    grid-area: footer;
+    margin-top: 2em;
+    visibility: hidden;
+}
+
+#link {
+    grid-area: illustration;
+    
+}
+
+
+/* TOP-KNAP START */
+
+#tiltop {
+    display: none;
+    position: fixed;
+    bottom: -15px;
+    right: 20px;
+    z-index: 99; /* ingen overlap */
+    border: none; 
+    outline: none; 
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    cursor: pointer; 
+    padding: 15px; /* Padding */    
+    font-size: 50px;    
+  }
+  
+    /* TOP-KNAP SLUT */
+
+
+    /* TABLET START */
+
+@media screen and (min-width: 700px){
+    #pagewrap {
+        display: grid;
+        grid-gap: 3px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "header header"
+        "tekst1 illustration"
+        "tekst2 tekst2"
+        "tekst3 tekst3"
+        "tekst4 tekst4"
+        "tekst5 tekst5"
+        "tekst6 tekst6"
+        "billedboks5 billedboks5"
+        "tekst7 tekst7"
+        "billedboks1 billedboks1"
+        "billedboks2 billedboks2"
+        "billedboks3 billedboks3"
+        "billedboks4 billedboks4"        
+        "footer footer"
+    }
+
+    body {
+        font-family: 'Roboto', sans-serif;
+        font-size: large;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: bottom;
+        visibility: visible;
+    }
+    
+    #Illustrationsfigur {
+        grid-area: illustration;
+        margin-top: 4em;
+        margin-bottom: 0.5em;
+        margin-right: 0.3em; 
+        margin-left: 2em;       
+        width: auto;
+        height: auto;
+        visibility: visible;
+    }
+
+    header {
+    grid-area: header;  
+    text-align: center;
+    margin-top: -0.8em;
+    margin-right: 0.3em;  
+    margin-bottom: 0.5em;
+    visibility: visible;
+
+    }
+
+    h1 {
+        font-size: 30px;
+        font-weight: 500;
+        padding-bottom: 13px;
+        visibility: visible;
+    }
+
+    img {
+        position: relative; /* NY*/
+        height: auto;
+    }
+    
+    #link {
+        grid-area: illustration;
+        text-align: right;             
+    }
+
+    .link {
+        border: solid;
+        background-color: rgb(218, 214, 214);
+        text-decoration: none;
+        border-color: transparent;
+        font-size: 11.7px;         
+        cursor: pointer;
+        width: auto;
+        height: auto;
+    }
+
+    .link:hover {
+        background-color: rgb(0, 0, 0);
+        color: white;
+        
+    }
+
+    
+    #footer {
+        grid-area: footer;
+        margin-top: 2em;
+        visibility: visible;
+    }
+
+   
+    /* TABLET SLUT */
+
+
+    /* DESKTOP START */
+    
+@media screen and (min-width: 1100px){
+    #pagewrap {
+        display: grid;
+        grid-gap: 3px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "header header header header"
+            "tekst1 tekst1 tekst1 illustration"
+            "tekst2 tekst2 tekst2 ."
+            "tekst3 tekst3 tekst3 ."
+            "tekst4 tekst4 tekst4 ."
+            "tekst5 tekst5 tekst5 ."
+            "tekst6 tekst6 tekst6 ."
+            "billedboks5 billedboks5 billedboks5 ."
+            "tekst7 tekst7 tekst7 ."
+            "billedboks1 billedboks1 billedboks1 ."
+            "billedboks2 billedboks2 billedboks2 ."
+            "billedboks3 billedboks3 billedboks3 ."
+            "billedboks4 billedboks4 billedboks4 ."            
+            "footer footer footer footer"
+    }
+
+    body {
+        font-family: 'Roboto', sans-serif;
+        font-size: large;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: bottom;
+        visibility: visible;
+    }
+
+    header {
+        grid-area: header;  
+        text-align: center;
+        margin-top: -0.4em;
+        margin-right: 0.3em;  
+        margin-bottom: 0.5em;
+        visibility: visible;        
+    }
+
+    h1 {
+        font-size: 30px;
+        font-weight: 500;
+        padding-bottom: 13px;
+        visibility: visible;
+    }
+    
+
+    #Illustrationsfigur {
+        grid-area: illustration;
+        margin-top: 4em;
+        margin-bottom: 0.5em;
+        margin-right: 0.3em;
+        width: auto;
+        height: auto;
+        visibility: visible;
+    }
+
+    img {      
+    position: relative;
+    height: auto;
+    }
+
+    #tekst1 {
+        line-height: 40px;
+        padding: 30px;
+        margin-left: 4.5em;
+        margin-right: 5em;    
+    }
+
+    #tekst2 {
+        line-height: 40px;
+        padding: 30px;
+        margin-left: 4.5em;
+        margin-right: 5em;            
+    }
+    
+    #tekst3 {
+        line-height: 40px;
+        padding: 30px;
+        margin-left: 4.5em;
+        margin-right: 5em;        
+    }
+
+    #tekst4 {
+        line-height: 40px;
+        padding: 30px;
+        margin-left: 4.5em;
+        margin-right: 5em;        
+    }
+
+    #tekst5 {
+        line-height: 40px;
+        padding: 30px;
+        margin-left: 4.5em;
+        margin-right: 5em;
+    }
+
+    
+    #tekst6 {
+        line-height: 40px;
+        padding: 30px;
+        margin-left: 4.5em;
+        margin-right: 5em;
+    }
+
+    
+    #tekst7 {
+        line-height: 40px;
+        padding: 30px;
+        margin-left: 4.5em;
+        margin-right: 5em;
+    }
+
+    
+    #billedboks1 {        
+        padding: 30px;
+        margin-left: 4.5em;
+        margin-right: 5em;
+    }
+
+    
+    #billedboks2 {        
+        padding: 30px;
+        margin-left: 4.5em;
+        margin-right: 5em;
+    }
+
+    
+    #billedboks3 {        
+        padding: 30px;
+        margin-left: 4.5em;
+        margin-right: 5em;
+    }
+
+    
+    #billedboks4 {        
+        padding: 30px;
+        margin-left: 4.5em;
+        margin-right: 5em;
+    }
+
+    
+    #billedboks5 {        
+        padding: 30px;
+        margin-left: 4.5em;
+        margin-right: 5em;
+    }
+
+    
+    #link {
+        grid-area: illustration;
+        
+    }
+  
+    #footer {
+        grid-area: footer;
+        margin-top: 2em;
+        visibility: visible;
+    }
+
+    /*DESKTOP SLUT */ 
