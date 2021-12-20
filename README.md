@@ -1,1 +1,142 @@
 # Eksamen
+
+<!DOCTYPE html>
+
+<html lang="da" dir="ltr"> 
+
+    <head> 
+        <meta charset="utf-8"> <!--Det danske alfabet-->
+        <meta name="viewport" content="width=device-width, initial-scale=1"/> <!--For at sikre mobile view-->
+        <meta name= "description" content="Design Thinking"> <!--En beskrivelse af hjemmesiden-->
+        
+        <title>Design Thinking</title> <!--Navngivelse af fanen i browseren-->        
+        
+        <link rel="stylesheet" href="styleblog.css"> <!--Indsæt CSS stylesheet efter href="-->        
+    </head>
+    
+    <body>
+        
+        <div id="pagewrap">
+
+            <header>
+                <img id="header-image" img src="Header-image.png" width="100%" height="100%" alt="header">                
+            </header>
+
+            <style>
+                body {
+                  background-image: url("Baggrunds-image.jpg");
+                }
+                </style>
+            
+           
+            <section id="Illustrationsfigur">
+                <img src="Illustrationsfigur.png" width="100%" height="100%" alt="Illustrationsfigur">
+                <p id="link"><a href="http://155335.web.dania-studerende.dk/wordpress/" target="_blank"><button class="link" id="linktilweb">Multimediedesignerens opslagsVÆRK</button></a></p>
+            </section>
+
+            <section id="tekst1">
+                <h1>Design Thinking – innovationsmetode</h1>
+                <h3>Metoden</h3>
+                    <p>Styrer processen ved at sætte rammer.<br>Rammerne styrer måden, der tænkes på.<br>Opdeler processen i divergerende og konvergerende faser.<br>En måde at hjælpe hjernen til at arbejde konstruktivt MED i stedet for at MODarbejde.
+                    </p>
+            </section>
+                   
+
+            <section id="tekst2">
+                <h3>Faserne i Design Thinking</h3>
+                <h4>(består af 5 trin – nedenfor er 4 og 5 dog lagt sammen)</h4>
+                <img src="Designfaserne.png" width="100%" height="100%"> 
+            </section>
+
+            
+            <section id="tekst3">
+                <h4>Empathize (dyb forståelse):</h4>
+                    <p>handler om at være nysgerrig. Der indsamles viden fra forskellige kilder – og der skabes et overblik over den viden, man har indsamlet. Fasen handler altså både om at indsamle viden - og at organisere den indsamlede viden. Løsningsforslag kan dukke op, notér dem og gem dem til Idiate-fasen.
+                    Organiseringen af den indsamlede viden gøres visuel gennem brug af whiteboards, post-it, fotos, tekster mv. – hæng op hvor det er muligt. Gør det håndgribeligt. Det kan hjælpe til at holde snuden i sporet.
+                    </p>
+            </section>
+                            
+            
+            <section id="tekst4">
+                <h4>Define (definér):</h4>
+                    <p>handler om at definere de problemstillinger fra Empathize-fasen, som er interessante og relevante at gå videre med. I denne fase forholder man sig også til de problemstillinger, der ikke fokuseres på at løse.</p>
+            </section>
+
+            <section id="tekst5">
+                <h4>Idiate (idéudvikling):</h4>
+                    <p>handler om at idéudvikle. Vær opmærksom på ikke at blive låst fast i én enkelt idé – vær åben – måske der dukker nye (nytænkende) og originale idéer op. Alle idéer skal være velkomne – også de fjollede. I denne proces skiftes bedst mellem ’divergent tænkning’ (fx brainstorm) og ’konvergent tænkning’ (idé-sortering fx kategorisering af idéerne).</p>
+            </section>
+
+            <section id="tekst6">
+                <h4>Prototype + test:</h4>
+                    <p>handler om at få skabt et produkt, der kan testes af på andre. At lave en prototype giver mulighed for udvikle og teste sine idéer af på en håndgribelig måde. Og det gør, at idéer kan testes af tidligt i processen – inden der bruges alt for mange ressourcer.</p>
+            </section>
+
+            <section id="tekst7">
+                <h4>Billeder fra Design Thinking-forløb på 1. semester:</h4>
+                <img src="Design_Think_foto 01.jpg" width="100%" height="100%">
+            </section>
+
+            <section id="billedboks1">
+                <img src="Design_Think_foto 02.jpg" width="100%" height="100%">
+
+            </section>
+
+            
+            <section id="billedboks2">
+                <img src="Design_Think_foto 03.jpg" width="100%" height="100%">
+
+            </section>
+
+            
+            <section id="billedboks3">
+                <img src="Design_Think_foto 04.jpg" width="100%" height="100%">
+
+            </section>
+
+            
+            <section id="billedboks4">
+                <img src="Design_Think_foto 05.jpg" width="100%" height="100%">
+
+            </section>
+
+            <section id="billedboks5">
+                <img src="Design Thinking_divergens_konvergens.jpg" width="100%" height="100%">
+            </section>
+           
+            <section id="footer">
+                <img src="footer.png" width="100%" height="100%">
+            </section>
+                
+                    
+
+        <!-- TOPKNAP START -->
+            <button onclick="topFunction()" id="tiltop" title="Tilbage til toppen">^</button>
+                <script>
+        
+                var mybutton = document.getElementById("tiltop");        
+        
+                window.onscroll = function() {scrollFunction()};
+        
+                function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+                } else {
+                mybutton.style.display = "none";
+          }
+        }        
+        
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+
+        <!-- TOPKNAP SLUT -->
+
+
+        </div><!-- pagewrap --> 
+
+    </body>
+
+</html>
